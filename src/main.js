@@ -11,4 +11,32 @@ AOS.init({
   offset: 100
 })
 
-createApp(App).mount('#app')
+// Add structured data for SEO
+const addStructuredData = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Money Trees",
+    "url": "https://moneytrees.com",
+    "logo": "https://moneytrees.com/logo.svg",
+    "description": "Money Trees offers expert web app development, mobile development, software solutions, and digital marketing services to help businesses thrive in the digital landscape.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "PH"
+    },
+    "sameAs": [
+      "https://facebook.com/moneytrees",
+      "https://twitter.com/moneytrees",
+      "https://linkedin.com/company/moneytrees"
+    ]
+  };
+
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.text = JSON.stringify(structuredData);
+  document.head.appendChild(script);
+};
+
+// Call the function when the app is mounted
+createApp(App).mount('#app');
+addStructuredData();
