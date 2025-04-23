@@ -11,7 +11,7 @@
       <div class="relative group h-full" data-aos="fade-up" data-aos-delay="200">
         <div class="rounded-lg overflow-hidden border border-[#E5C4A8] md:border-1 bg-[#1a2820] h-full">
           <div class="aspect-[3/4] relative overflow-hidden">
-            <img src="../assets/team/1.svg" alt="Juon Dela Cruz" class="w-full h-full object-cover rounded-lg" />
+            <img src="../assets/team/1.svg" loading="lazy" alt="Juon Dela Cruz" class="w-full h-full object-cover rounded-lg" />
             <!-- Hover Content -->
             <div class="absolute inset-0 bg-[#1a2820]/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-3 md:p-6 flex flex-col">
               <div class="flex-grow flex flex-col justify-center">
@@ -47,7 +47,7 @@
       <div class="relative group h-full" data-aos="fade-up" data-aos-delay="300">
         <div class="rounded-lg overflow-hidden border border-[#E5C4A8] md:border-1 bg-[#1a2820] h-full">
           <div class="aspect-[3/4] relative overflow-hidden">
-            <img src="../assets/team/2.svg" alt="Ella Montis" class="w-full h-full object-cover rounded-lg" />
+            <img src="../assets/team/2.svg" loading="lazy" alt="Ella Montis" class="w-full h-full object-cover rounded-lg" />
             <!-- Hover Content -->
             <div class="absolute inset-0 bg-[#1a2820]/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-3 md:p-6 flex flex-col">
               <div class="flex-grow flex flex-col justify-center">
@@ -83,7 +83,7 @@
       <div class="relative group h-full" data-aos="fade-up" data-aos-delay="200">
         <div class="rounded-lg overflow-hidden border border-[#E5C4A8] md:border-1 bg-[#1a2820] h-full">
           <div class="aspect-[3/4] relative overflow-hidden">
-            <img src="../assets/team/3.svg" alt="Mark Roles" class="w-full h-full object-cover rounded-lg" />
+            <img src="../assets/team/3.svg" loading="lazy" alt="Mark Roles" class="w-full h-full object-cover rounded-lg" />
             <!-- Hover Content -->
             <div class="absolute inset-0 bg-[#1a2820]/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-3 md:p-6 flex flex-col">
               <div class="flex-grow flex flex-col justify-center">
@@ -119,7 +119,7 @@
       <div class="relative group h-full" data-aos="fade-up" data-aos-delay="300">
         <div class="rounded-lg overflow-hidden border border-[#E5C4A8] md:border-1 bg-[#1a2820] h-full">
           <div class="aspect-[3/4] relative overflow-hidden">
-            <img src="../assets/team/4.svg" alt="Kay Hans" class="w-full h-full object-cover rounded-lg" />
+            <img src="../assets/team/4.svg" loading="lazy" alt="Kay Hans" class="w-full h-full object-cover rounded-lg" />
             <!-- Hover Content -->
             <div class="absolute inset-0 bg-[#1a2820]/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-3 md:p-6 flex flex-col">
               <div class="flex-grow flex flex-col justify-center">

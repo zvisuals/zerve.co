@@ -83,6 +83,7 @@
             <img 
               src="../assets/contactimage.svg" 
               alt="Contact Illustration" 
+              loading="lazy"
               class="w-full max-w-md mx-auto"
             />
             

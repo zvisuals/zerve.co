@@ -11,29 +11,29 @@
       <div class="slider-track">
         <!-- First Set -->
         <div class="slide-content">
-          <img src="../assets/partners/partner1.svg" alt="Partner 1" class="partner-logo" />
-          <img src="../assets/partners/partner2.svg" alt="Partner 2" class="partner-logo" />
-          <img src="../assets/partners/partner3.svg" alt="Partner 3" class="partner-logo" />
-          <img src="../assets/partners/partner4.svg" alt="Partner 4" class="partner-logo" />
-          <img src="../assets/partners/partner5.svg" alt="Partner 5" class="partner-logo" />
-          <img src="../assets/partners/partner6.svg" alt="Partner 6" class="partner-logo" />
-          <img src="../assets/partners/partner7.svg" alt="Partner 7" class="partner-logo" />
-          <img src="../assets/partners/partner8.svg" alt="Partner 8" class="partner-logo" />
-          <img src="../assets/partners/partner9.svg" alt="Partner 9" class="partner-logo" />
-          <img src="../assets/partners/partner10.svg" alt="Partner 10" class="partner-logo" />
+          <img src="../assets/partners/partner1.svg" alt="Partner 1" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
+          <img src="../assets/partners/partner2.svg" alt="Partner 2" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
+          <img src="../assets/partners/partner3.svg" alt="Partner 3" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
+          <img src="../assets/partners/partner4.svg" alt="Partner 4" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
+          <img src="../assets/partners/partner5.svg" alt="Partner 5" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
+          <img src="../assets/partners/partner6.svg" alt="Partner 6" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
+          <img src="../assets/partners/partner7.svg" alt="Partner 7" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
+          <img src="../assets/partners/partner8.svg" alt="Partner 8" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
+          <img src="../assets/partners/partner9.svg" alt="Partner 9" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
+          <img src="../assets/partners/partner10.svg" alt="Partner 10" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
         </div>
         <!-- Duplicate Set for Seamless Loop -->
         <div class="slide-content">
-          <img src="../assets/partners/partner1.svg" alt="Partner 1" class="partner-logo" />
-          <img src="../assets/partners/partner2.svg" alt="Partner 2" class="partner-logo" />
-          <img src="../assets/partners/partner3.svg" alt="Partner 3" class="partner-logo" />
-          <img src="../assets/partners/partner4.svg" alt="Partner 4" class="partner-logo" />
-          <img src="../assets/partners/partner5.svg" alt="Partner 5" class="partner-logo" />
-          <img src="../assets/partners/partner6.svg" alt="Partner 6" class="partner-logo" />
-          <img src="../assets/partners/partner7.svg" alt="Partner 7" class="partner-logo" />
-          <img src="../assets/partners/partner8.svg" alt="Partner 8" class="partner-logo" />
-          <img src="../assets/partners/partner9.svg" alt="Partner 9" class="partner-logo" />
-          <img src="../assets/partners/partner10.svg" alt="Partner 10" class="partner-logo" />
+          <img src="../assets/partners/partner1.svg" alt="Partner 1" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
+          <img src="../assets/partners/partner2.svg" alt="Partner 2" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
+          <img src="../assets/partners/partner3.svg" alt="Partner 3" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
+          <img src="../assets/partners/partner4.svg" alt="Partner 4" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
+          <img src="../assets/partners/partner5.svg" alt="Partner 5" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
+          <img src="../assets/partners/partner6.svg" alt="Partner 6" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
+          <img src="../assets/partners/partner7.svg" alt="Partner 7" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
+          <img src="../assets/partners/partner8.svg" alt="Partner 8" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
+          <img src="../assets/partners/partner9.svg" alt="Partner 9" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
+          <img src="../assets/partners/partner10.svg" alt="Partner 10" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
         </div>
       </div>
     </div>

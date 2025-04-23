@@ -6,7 +6,7 @@
         <!-- Logo and Description -->
         <div class="space-y-6">
           <div class="flex items-center">
-            <img src="../assets/logo.svg" alt="Money Trees Logo" class="h-10 w-10 mr-3" />
+            <img src="../assets/logo.svg" loading="lazy" alt="Money Trees Logo" class="h-10 w-10 mr-3" />
             <span class="text-2xl font-bold" style="font-family: 'Sarpanch', sans-serif;">Money Trees</span>
           </div>
           <p class="text-gray-400" style="font-family: 'Quicksand', sans-serif;">

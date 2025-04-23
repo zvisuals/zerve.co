@@ -9,8 +9,10 @@ import Team from './components/Team.vue';
 import ContactUs from './components/ContactUs.vue';
 import Services from './components/Services.vue';
 import Footer from './components/Footer.vue';
+import Loader from './components/Loader.vue';
 
 const showScrollButton = ref(false);
+const isLoading = ref(true);
 
 const scrollToTop = () => {
   window.scrollTo({
@@ -25,6 +27,11 @@ const handleScroll = () => {
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
+  
+  // Simple timeout to hide loader
+  setTimeout(() => {
+    isLoading.value = false;
+  }, 2000);
 });
 
 onUnmounted(() => {
@@ -34,28 +41,36 @@ onUnmounted(() => {
 
 <template>
   <div class="relative">
-    <!-- Texture Overlay -->
-    <div class="fixed inset-0 pointer-events-none z-[1] texture-overlay"></div>
+    <!-- Loading Screen -->
+    <div v-if="isLoading" class="fixed inset-0 bg-[#151e18] z-[9999] flex items-center justify-center">
+      <Loader />
+    </div>
 
-    <!-- Scroll to Top Button -->
-    <button 
-      @click="scrollToTop" 
-      class="fixed bottom-8 right-8 z-[9999] p-2 rounded-full opacity-40 hover:opacity-100 transition-all duration-300 text-[#FF6B00] transform"
-      :class="{ 'translate-y-[200%]': !showScrollButton, 'translate-y-0': showScrollButton }"
-      style="filter: drop-shadow(0 0 10px rgba(255, 107, 0, 0.3));"
-    >
-      <span class="material-symbols-outlined text-4xl">keyboard_double_arrow_up</span>
-    </button>
+    <!-- Main Content -->
+    <div v-else>
+      <!-- Texture Overlay -->
+      <div class="fixed inset-0 pointer-events-none z-[1] texture-overlay"></div>
 
-    <Navbar />
-    <Home />
-    <Products />
-    <Services />
-    <About />
-    <Partners />
-    <Team />
-    <ContactUs />
-    <Footer />
+      <!-- Scroll to Top Button -->
+      <button 
+        @click="scrollToTop" 
+        class="fixed bottom-8 right-8 z-[9999] p-2 rounded-full opacity-40 hover:opacity-100 transition-all duration-300 text-[#FF6B00] transform"
+        :class="{ 'translate-y-[200%]': !showScrollButton, 'translate-y-0': showScrollButton }"
+        style="filter: drop-shadow(0 0 10px rgba(255, 107, 0, 0.3));"
+      >
+        <span class="material-symbols-outlined text-4xl">keyboard_double_arrow_up</span>
+      </button>
+
+      <Navbar />
+      <Home />
+      <Products />
+      <Services />
+      <About />
+      <Partners />
+      <Team />
+      <ContactUs />
+      <Footer />
+    </div>
   </div>
 </template>
 

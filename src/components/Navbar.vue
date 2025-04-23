@@ -2,7 +2,7 @@
   <nav ref="navbar" class="fixed top-0 w-screen max-w-full flex flex-row items-center justify-between px-2 md:px-[5%] py-2 pt-3 bg-[#151e18]/45 backdrop-blur-sm transition-transform duration-300 z-50" style="font-family: 'Sarpanch', sans-serif;">
     <!-- Logo and Brand Name -->
     <div class="flex items-center font-bold text-gray-100 cursor-pointer" @click="scrollToTop">
-      <img src="../assets/logo.svg" alt="Logo" class="h-8 w-8 md:h-13 md:w-13 mr-2" />
+      <img src="../assets/logo.svg" loading="lazy" alt="Logo" class="h-8 w-8 md:h-13 md:w-13 mr-2" />
       <span class="hidden xl:inline text-2xl">Money Trees</span>
     </div>
     <!-- Navigation Links -->

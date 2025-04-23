@@ -2,7 +2,7 @@
   <div id="home" class="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
     <!-- Parallax Background -->
     <div class="parallax-bg absolute inset-0 w-full h-[120%] z-0">
-      <img src="../assets/MTHomeBG.svg" alt="Background" class="w-full h-full object-cover" />
+      <img src="../assets/MTHomeBG.svg" loading="lazy" alt="Background" class="w-full h-full object-cover" />
     </div>
     
     <!-- Firefly Video Overlay -->
@@ -22,7 +22,7 @@
     <div class="parallax-content relative z-10 flex flex-col items-center justify-center transform">
       <!-- Logo with glow effect -->
       <div class="mb-8 parallax-item" data-speed="0.1">
-        <img src="../assets/logo.svg" alt="Money Trees Logo" class="logo-image w-108 h-108 mx-auto" />
+        <img src="../assets/logo.svg" loading="lazy" alt="Money Trees Logo" class="logo-image w-108 h-108 mx-auto" />
       </div>
       
       <!-- Title -->
