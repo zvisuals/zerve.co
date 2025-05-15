@@ -11,38 +11,48 @@
       <div class="slider-track">
         <!-- First Set -->
         <div class="slide-content">
-          <img src="../assets/partners/partner1.svg" alt="Partner 1" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
-          <img src="../assets/partners/partner2.svg" alt="Partner 2" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
-          <img src="../assets/partners/partner3.svg" alt="Partner 3" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
-          <img src="../assets/partners/partner4.svg" alt="Partner 4" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
-          <img src="../assets/partners/partner5.svg" alt="Partner 5" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
-          <img src="../assets/partners/partner6.svg" alt="Partner 6" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
-          <img src="../assets/partners/partner7.svg" alt="Partner 7" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
-          <img src="../assets/partners/partner8.svg" alt="Partner 8" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
-          <img src="../assets/partners/partner9.svg" alt="Partner 9" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
-          <img src="../assets/partners/partner10.svg" alt="Partner 10" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
+          <img src="../assets/partners/Booklyph.svg" alt="Booklyph" class="partner-logo" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/BRB.svg" alt="BRB" class="partner-logo" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Clockify.svg" alt="Clockify" class="partner-logo grayscale" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Confluence.svg" alt="Confluence" class="partner-logo grayscale" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Cookiebro.svg" alt="Cookiebro" class="partner-logo" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Exodus.svg" alt="Exodus" class="partner-logo" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Git.svg" alt="Git" class="partner-logo grayscale" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Hostinger.svg" alt="Hostinger" class="partner-logo grayscale" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Jira.svg" alt="Jira" class="partner-logo grayscale" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Moss.svg" alt="Moss" class="partner-logo" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/MST.svg" alt="MST" class="partner-logo" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Revest360.svg" alt="Revest360" class="partner-logo" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Swift.svg" alt="Swift" class="partner-logo" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Tailwind.svg" alt="Tailwind" class="partner-logo grayscale" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Tiwalgo.svg" alt="Tiwalgo" class="partner-logo" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/UB.svg" alt="UB" class="partner-logo" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/UC.svg" alt="UC" class="partner-logo" loading="lazy" width="270" height="270" fetchpriority="low" />
         </div>
         <!-- Duplicate Set for Seamless Loop -->
         <div class="slide-content">
-          <img src="../assets/partners/partner1.svg" alt="Partner 1" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
-          <img src="../assets/partners/partner2.svg" alt="Partner 2" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
-          <img src="../assets/partners/partner3.svg" alt="Partner 3" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
-          <img src="../assets/partners/partner4.svg" alt="Partner 4" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
-          <img src="../assets/partners/partner5.svg" alt="Partner 5" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
-          <img src="../assets/partners/partner6.svg" alt="Partner 6" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
-          <img src="../assets/partners/partner7.svg" alt="Partner 7" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
-          <img src="../assets/partners/partner8.svg" alt="Partner 8" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
-          <img src="../assets/partners/partner9.svg" alt="Partner 9" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
-          <img src="../assets/partners/partner10.svg" alt="Partner 10" class="partner-logo" loading="lazy" width="200" height="80" fetchpriority="low" />
+          <img src="../assets/partners/Booklyph.svg" alt="Booklyph" class="partner-logo" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/BRB.svg" alt="BRB" class="partner-logo" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Clockify.svg" alt="Clockify" class="partner-logo grayscale" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Confluence.svg" alt="Confluence" class="partner-logo grayscale" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Cookiebro.svg" alt="Cookiebro" class="partner-logo" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Exodus.svg" alt="Exodus" class="partner-logo" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Git.svg" alt="Git" class="partner-logo grayscale" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Hostinger.svg" alt="Hostinger" class="partner-logo grayscale" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Jira.svg" alt="Jira" class="partner-logo grayscale" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Moss.svg" alt="Moss" class="partner-logo" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/MST.svg" alt="MST" class="partner-logo" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Revest360.svg" alt="Revest360" class="partner-logo" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Swift.svg" alt="Swift" class="partner-logo" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Tailwind.svg" alt="Tailwind" class="partner-logo grayscale" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/Tiwalgo.svg" alt="Tiwalgo" class="partner-logo" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/UB.svg" alt="UB" class="partner-logo" loading="lazy" width="270" height="270" fetchpriority="low" />
+          <img src="../assets/partners/UC.svg" alt="UC" class="partner-logo" loading="lazy" width="270" height="270" fetchpriority="low" />
         </div>
       </div>
     </div>
   </div>
 </template>
-
-<script setup>
-// No complex logic needed
-</script>
 
 <style scoped>
 .slider-track {
@@ -59,10 +69,9 @@
 }
 
 .partner-logo {
-  height: 5rem;
+  height: 16.875rem;
   width: auto;
   object-fit: contain;
-  filter: grayscale(1);
   transition: all 0.3s ease;
 }
 
@@ -72,7 +81,7 @@
 
 @media (min-width: 768px) {
   .partner-logo {
-    height: 6rem;
+    height: 16.875rem;
   }
 }
 
@@ -87,5 +96,13 @@
 
 .slider-track:hover {
   animation-play-state: paused;
+}
+
+.grayscale {
+  filter: grayscale(1);
+  transition: filter 0.3s ease;
+}
+.grayscale:hover {
+  filter: grayscale(0);
 }
 </style>

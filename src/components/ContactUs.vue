@@ -1,5 +1,5 @@
 <template>
-  <div id="contact" class=" p-6 md:p-12 lg:px-[10%] lg:py-16 pt-24 bg-[#151e18]">
+  <div id="contact" class="p-6 md:p-12 lg:px-[10%] lg:py-16 pt-24 contact-bg">
     <!-- Simple Success Popup -->
     <div v-show="showSuccess" class="fixed inset-0 z-50 flex items-center justify-center p-4">
       <div class="fixed inset-0 bg-black/70"></div>
@@ -199,6 +199,11 @@ onMounted(() => {
 <style scoped>
 .backdrop-blur-sm {
   backdrop-filter: blur(4px);
+}
+
+.contact-bg {
+  background: #151E18;
+background: linear-gradient(179deg, rgba(21, 30, 24, 1) 0%, rgba(23, 51, 41, 1) 50%, rgba(26, 41, 32, 1) 100%);
 }
 
 input::placeholder, textarea::placeholder {

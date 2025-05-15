@@ -8,6 +8,7 @@ import Partners from './components/Partners.vue';
 import Team from './components/Team.vue';
 import ContactUs from './components/ContactUs.vue';
 import Services from './components/Services.vue';
+import TechStack from './components/TechStack.vue';
 import Footer from './components/Footer.vue';
 import Loader from './components/Loader.vue';
 
@@ -65,6 +66,7 @@ onUnmounted(() => {
       <Home />
       <Products />
       <Services />
+      <TechStack />
       <About />
       <Partners />
       <Team />

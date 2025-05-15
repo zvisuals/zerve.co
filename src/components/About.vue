@@ -9,10 +9,10 @@
     <div id="who-we-are" class="space-y-10 md:space-y-16 scroll-mt-24">
       <!-- First Section -->
       <div data-aos="fade-right" class="bg-[#223329]/50 rounded-xl p-6 md:p-8 backdrop-blur-sm">
-        <h2 class="text-[#FF6B00] text-3xl md:text-4xl mb-6" style="font-family: 'Sarpanch', sans-serif;">
+        <h2 class="text-[#FF6B00] text-3xl md:text-4xl mb-3" style="font-family: 'Sarpanch', sans-serif;">
           WHO WE ARE
         </h2>
-        <p class="text-white text-xl md:text-3xl leading-relaxed font-medium" style="font-family: 'Quicksand', sans-serif;">
+        <p class="text-white text-xl md:text-2xl leading-relaxed font-medium" style="font-family: 'Quicksand', sans-serif;">
           In response to changing market trends, Money Trees Company has shifted its business focus from consumer goods trading to
           web app development and online services. The company is dedicated to producing high-quality digital solutions that cater to
           various client needs across multiple industries.
@@ -25,10 +25,10 @@
           <img 
             src="../assets/meeting-image.svg" 
             alt="Team Meeting" 
-            class="w-full h-auto max-w-[60%] mx-auto hover-tilt-right transition-transform duration-300 rounded-lg" 
+            class="w-full h-auto max-w-[50%] mx-auto hover-tilt-right transition-transform duration-300 rounded-lg" 
             loading="lazy"
             width="800"
-            height="600"
+            height="500"
             fetchpriority="low"
           />
         </div>
@@ -55,8 +55,7 @@
               VISION
             </h2>
             <p class="text-white text-lg md:text-3xl leading-relaxed font-medium" style="font-family: 'Quicksand', sans-serif;">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis arcu et mi tincidunt, at tincidunt mi
-              tempor. Curabitur at eros at odio posuere laoreet.
+              To be a leading provider of innovative, scalable, and user-centric digital solutions that empower businesses and communities in the Philippines and across the globe.
             </p>
           </div>
           <div class="flex items-center justify-center h-[370px]">
@@ -98,8 +97,7 @@
               MISSION
             </h2>
             <p class="text-white text-lg md:text-3xl leading-relaxed font-medium" style="font-family: 'Quicksand', sans-serif;">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis arcu et mi tincidunt, at tincidunt mi
-              tempor. Curabitur at eros at odio posuere laoreet.
+              Money Trees Company is committed to delivering high-quality web applications and online services tailored to the evolving needs of diverse industries. Through continuous innovation, strategic collaboration, and a passion for technology, we strive to create impactful solutions that drive growth, efficiency, and digital transformation.
             </p>
           </div>
         </div>
