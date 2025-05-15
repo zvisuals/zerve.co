@@ -1,5 +1,5 @@
 <template>
-  <div id="team" class="min-h-screen p-6 md:p-12 lg:px-[10%] lg:py-16 pt-24 bg-[#151e18]">
+  <div id="team" class="p-6 md:p-12 lg:px-[10%] lg:py-16 pt-24 bg-[#151e18]">
     <!-- Header -->
     <h1 class="text-[#FF6B00] text-3xl md:text-5xl mb-10 text-center" data-aos="fade-down" data-aos-delay="150" style="font-family: 'Sarpanch', sans-serif;">
       MEET THE TEAM

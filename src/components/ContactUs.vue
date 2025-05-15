@@ -1,5 +1,15 @@
 <template>
-  <div id="contact" class="min-h-screen p-6 md:p-12 lg:px-[10%] lg:py-16 pt-24 bg-[#151e18]">
+  <div id="contact" class=" p-6 md:p-12 lg:px-[10%] lg:py-16 pt-24 bg-[#151e18]">
+    <!-- Simple Success Popup -->
+    <div v-show="showSuccess" class="fixed inset-0 z-50 flex items-center justify-center p-4">
+      <div class="fixed inset-0 bg-black/70"></div>
+      <div class="relative bg-[#1a2820] p-6 rounded-lg text-center max-w-sm w-full">
+        <i class="material-icons text-green-500 text-4xl mb-4">check_circle</i>
+        <h3 class="text-xl text-[#E5C4A8] mb-2">Message Sent!</h3>
+        <p class="text-[#E5C4A8]/80">We will get back to you shortly.</p>
+      </div>
+    </div>
+
     <!-- Header -->
     <h1 class="text-[#FF6B00] text-3xl md:text-5xl mb-10 text-center" data-aos="fade-down" data-aos-delay="200" style="font-family: 'Sarpanch', sans-serif;">
       CONTACT US
@@ -12,11 +22,6 @@
           <div class="space-y-6">
             <form @submit="handleSubmit">
               <!-- Success Message -->
-              <div v-if="showSuccess" class="mb-4 p-4 bg-green-500/20 border border-green-500 rounded-lg text-green-500">
-                Message sent successfully!
-              </div>
-              
-              <!-- Error Message -->
               <div v-if="showError" class="mb-4 p-4 bg-red-500/20 border border-red-500 rounded-lg text-red-500">
                 Failed to send message. Please try again.
               </div>
@@ -47,7 +52,7 @@
                 <input 
                   type="email" 
                   name="email"
-                  placeholder="Email" 
+                  placeholder="Your email" 
                   required
                   class="w-full bg-[#151e18] text-[#E5C4A8] rounded-lg pl-12 pr-4 py-3 border border-[#E5C4A8]/30 focus:border-[#E5C4A8] focus:outline-none placeholder-[#E5C4A8]/50"
                   style="font-family: 'Quicksand', sans-serif;"
@@ -125,6 +130,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import AOS from 'aos';
+import emailjs from '@emailjs/browser';
 import 'aos/dist/aos.css';
 
 // Add Google Icons stylesheet
@@ -138,34 +144,43 @@ const isSubmitting = ref(false);
 const showSuccess = ref(false);
 const showError = ref(false);
 
+// Initialize EmailJS
+emailjs.init('sv9wmLZC3B3Pi0lua');
+
 const handleSubmit = async (e) => {
   e.preventDefault();
+  
+  if (isSubmitting.value) return;
+  
   isSubmitting.value = true;
   showError.value = false;
+  showSuccess.value = false;
   
   const form = e.target;
   const formData = new FormData(form);
+  const data = Object.fromEntries(formData);
   
   try {
-    const response = await fetch('https://formsubmit.co/ajax/zvisuals.zxc@gmail.com', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify(Object.fromEntries(formData))
-    });
+    await emailjs.send(
+      'service_zesiapr',
+      'template_g10s9aq',
+      {
+        from_name: data.name,
+        from_email: data.email,
+        message: data.message
+      }
+    );
     
-    if (response.ok) {
-      showSuccess.value = true;
-      form.reset();
-      setTimeout(() => {
-        showSuccess.value = false;
-      }, 5000);
-    } else {
-      showError.value = true;
-    }
+    form.reset();
+    showSuccess.value = true;
+    
+    // Hide the success message after 3 seconds
+    setTimeout(() => {
+      showSuccess.value = false;
+    }, 3000);
+    
   } catch (error) {
+    console.error('EmailJS error:', error);
     showError.value = true;
   } finally {
     isSubmitting.value = false;
@@ -194,5 +209,22 @@ input::placeholder, textarea::placeholder {
 input:focus::placeholder, textarea:focus::placeholder {
   opacity: 0.3;
 }
-</style>
 
+/* Add these styles to prevent white background on autofill */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: #E5C4A8;
+  -webkit-box-shadow: 0 0 0px 1000px #151e18 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Ensure text color remains consistent when filled */
+input,
+textarea {
+  color-scheme: dark;
+}
+</style>
