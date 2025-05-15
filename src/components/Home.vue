@@ -14,7 +14,7 @@
         muted 
         playsinline
       >
-        <source src="../assets/fireflies.mp4" type="video/mp4">
+        <source src="../assets/Fireflies.mp4" type="video/mp4">
       </video>
     </div>
     
