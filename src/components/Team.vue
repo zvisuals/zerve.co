@@ -9,7 +9,7 @@
     <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-8">
       <!-- Team Member 1 -->
       <div class="relative group h-full" data-aos="fade-up" data-aos-delay="200">
-        <div class="rounded-lg overflow-hidden border border-[#E5C4A8] md:border-1 bg-[#1a2820] h-full">
+        <div class="rounded-lg overflow-hidden bg-[#1a2820] h-full team-card-shadow">
           <div class="aspect-[3/4] relative overflow-hidden">
             <img src="../assets/team/1.svg" loading="lazy" alt="Juon Dela Cruz" class="w-full h-full object-cover rounded-lg" />
             <!-- Hover Content -->
@@ -45,7 +45,7 @@
 
       <!-- Team Member 2 -->
       <div class="relative group h-full" data-aos="fade-up" data-aos-delay="300">
-        <div class="rounded-lg overflow-hidden border border-[#E5C4A8] md:border-1 bg-[#1a2820] h-full">
+        <div class="rounded-lg overflow-hidden bg-[#1a2820] h-full team-card-shadow">
           <div class="aspect-[3/4] relative overflow-hidden">
             <img src="../assets/team/2.svg" loading="lazy" alt="Ella Montis" class="w-full h-full object-cover rounded-lg" />
             <!-- Hover Content -->
@@ -81,7 +81,7 @@
 
       <!-- Team Member 3 -->
       <div class="relative group h-full" data-aos="fade-up" data-aos-delay="200">
-        <div class="rounded-lg overflow-hidden border border-[#E5C4A8] md:border-1 bg-[#1a2820] h-full">
+        <div class="rounded-lg overflow-hidden bg-[#1a2820] h-full team-card-shadow">
           <div class="aspect-[3/4] relative overflow-hidden">
             <img src="../assets/team/3.svg" loading="lazy" alt="Mark Roles" class="w-full h-full object-cover rounded-lg" />
             <!-- Hover Content -->
@@ -117,7 +117,7 @@
 
       <!-- Team Member 4 -->
       <div class="relative group h-full" data-aos="fade-up" data-aos-delay="300">
-        <div class="rounded-lg overflow-hidden border border-[#E5C4A8] md:border-1 bg-[#1a2820] h-full">
+        <div class="rounded-lg overflow-hidden bg-[#1a2820] h-full team-card-shadow">
           <div class="aspect-[3/4] relative overflow-hidden">
             <img src="../assets/team/4.svg" loading="lazy" alt="Kay Hans" class="w-full h-full object-cover rounded-lg" />
             <!-- Hover Content -->
@@ -181,5 +181,9 @@ img {
 /* Add smooth transition for hover content */
 .group:hover .opacity-0 {
   opacity: 1;
+}
+
+.team-card-shadow {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 </style>

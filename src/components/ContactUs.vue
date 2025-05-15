@@ -16,7 +16,7 @@
     </h1>
 
     <div class="max-w-6xl mx-auto">
-      <div class="bg-[#1a2820]/50 backdrop-blur-sm rounded-xl p-8 md:p-12" data-aos="fade-up" data-aos-delay="300">
+      <div class="bg-[#1a2820]/50 backdrop-blur-sm rounded-xl p-8 md:p-12 contact-card-shadow" data-aos="fade-up" data-aos-delay="300">
         <div class="grid md:grid-cols-2 gap-8 items-center">
           <!-- Contact Form -->
           <div class="space-y-6">
@@ -231,5 +231,9 @@ textarea:-webkit-autofill:focus {
 input,
 textarea {
   color-scheme: dark;
+}
+
+.contact-card-shadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 </style>
