@@ -4,11 +4,11 @@
       <h1 class="text-[#FF6B00] text-3xl md:text-5xl mb-10 text-center" style="font-family: 'Sarpanch', sans-serif;">
         TECHSTACK
       </h1>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+      <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-6">
         <div class="card-container h-full" v-for="name in techNames" :key="name">
-          <div class="tilt-card bg-[#223329]/50 backdrop-blur-sm rounded-xl p-4 border border-[#334b3a] h-full flex flex-col items-center justify-center">
-            <div class="aspect-square mb-2 max-w-[100px] mx-auto flex items-center justify-center">
-              <img v-if="techLogos[name]" :src="techLogos[name]" :alt="name + ' logo'" class="h-16 w-16 object-contain" />
+          <div class="tilt-card bg-[#223329]/50 backdrop-blur-sm rounded-xl p-2 sm:p-3 md:p-4 border border-[#334b3a] h-full flex flex-col items-center justify-center">
+            <div class="aspect-square mb-2 max-w-[70px] sm:max-w-[80px] md:max-w-[100px] mx-auto flex items-center justify-center">
+              <img v-if="techLogos[name]" :src="techLogos[name]" :alt="name + ' logo'" class="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 object-contain" />
             </div>
             <h3 class="text-[#FF6B00] text-lg mb-1 text-center" style="font-family: 'Sarpanch', sans-serif;">{{ name }}</h3>
           </div>
