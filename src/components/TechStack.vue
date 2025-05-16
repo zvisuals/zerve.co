@@ -20,22 +20,24 @@
 
 <script setup>
 const techNames = [
+  'Laravel',
+  'Vue.js',
+  'React',
+  'React Native',
+  'Next.js',
+  'WordPress',
   'Tamagui',
   'Solito',
   'Expo',
-  'Next.js',
   'TanStack Query',
   'Zustand',
-  'Vue.js',
-  'Laravel',
   'MySQL',
-  'React',
-  'React Native',
   'Tailwind',
   'Vuetify',
   'Pinia',
   'Quill Editor',
-  'Vite'
+  'Vite',
+  'Digital Ocean'
 ];
 
 const techLogos = {
@@ -43,6 +45,7 @@ const techLogos = {
   'Solito': new URL('../assets/techstack/Solito.svg', import.meta.url).href,
   'Expo': new URL('../assets/techstack/Expo.svg', import.meta.url).href,
   'Next.js': new URL('../assets/techstack/Next.svg', import.meta.url).href,
+  'WordPress': new URL('../assets/techstack/Wordpress.svg', import.meta.url).href,
   'TanStack Query': new URL('../assets/techstack/Tanstack.svg', import.meta.url).href,
   'Zustand': new URL('../assets/techstack/Zustand.svg', import.meta.url).href,
   'Vue.js': new URL('../assets/techstack/Vue.svg', import.meta.url).href,
@@ -54,7 +57,8 @@ const techLogos = {
   'Vuetify': new URL('../assets/techstack/Vuetify.svg', import.meta.url).href,
   'Pinia': new URL('../assets/techstack/Pinia.svg', import.meta.url).href,
   'Quill Editor': new URL('../assets/techstack/Quill.svg', import.meta.url).href,
-  'Vite': new URL('../assets/techstack/Vite.svg', import.meta.url).href
+  'Vite': new URL('../assets/techstack/Vite.svg', import.meta.url).href,
+  'Digital Ocean': new URL('../assets/techstack/Digitalocean.svg', import.meta.url).href
 };
 </script>
 
@@ -70,7 +74,8 @@ const techLogos = {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .tilt-card:hover {
-  transform: perspective(1000px) rotateX(0) rotateY(0) scale3d(1.02, 1.02, 1.02);
+  transform: perspective(1000px) rotateX(0) rotateY(0) scale3d(1.08, 1.08, 1.08) translateY(-8px);
+  box-shadow: 0 12px 32px 0 rgba(0, 255, 128, 0.25), 0 8px 24px 0 rgba(0,0,0,0.25), 0 1.5px 6px 0 rgba(0,255,128,0.15), 0 0.5px 2px 0 rgba(0,0,0,0.10);
 }
 .techstack-bg {
     background: #091C1A;

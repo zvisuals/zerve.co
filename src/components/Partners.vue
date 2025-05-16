@@ -8,19 +8,28 @@
     <h1 class="text-[#FF6B00] text-3xl md:text-5xl mb-10 text-center relative z-[1]" data-aos="fade-down" data-aos-delay="100" style="font-family: 'Sarpanch', sans-serif;">
       PARTNERS
     </h1>
-    <!-- Partners Grid as Cards -->
-    <div class="grid grid-cols-3 md:grid-cols-6 gap-2 md:gap-6 justify-items-center items-center relative z-[1]">
-      <!-- Colored Logos First -->
-      <div class="card-container h-full">
-        <div class="tilt-card bg-[#223329]/50 backdrop-blur-sm rounded-xl p-2 md:p-4 border border-[#334b3a] w-full h-full flex flex-col items-center justify-center aspect-square max-w-[120px] md:max-w-[180px] lg:max-w-[250px] lg:w-[250px] lg:h-[250px]">
-          <img src="../assets/partners/UB.svg" alt="UB" class="partner-logo" loading="lazy" width="100" height="100" srcset="../assets/partners/UB.svg 100w, ../assets/partners/UB.svg 180w, ../assets/partners/UB.svg 250w" sizes="(max-width: 768px) 100px, (max-width: 1024px) 180px, 250px" fetchpriority="low" />
+    <!-- Partners Grid: First Row (3 columns) -->
+    <div class="w-full flex justify-center mb-6">
+      <div class="grid grid-cols-3 gap-6 justify-items-center items-center w-full max-w-4xl">
+        <div class="card-container h-full">
+          <div class="tilt-card bg-[#223329]/50 backdrop-blur-sm rounded-xl p-2 md:p-4 border border-[#334b3a] w-full h-full flex flex-col items-center justify-center aspect-square max-w-[120px] md:max-w-[180px] lg:max-w-[250px] lg:w-[250px] lg:h-[250px]">
+            <img src="../assets/partners/UB.svg" alt="UB" class="partner-logo" loading="lazy" width="100" height="100" srcset="../assets/partners/UB.svg 100w, ../assets/partners/UB.svg 180w, ../assets/partners/UB.svg 250w" sizes="(max-width: 768px) 100px, (max-width: 1024px) 180px, 250px" fetchpriority="low" />
+          </div>
+        </div>
+        <div class="card-container h-full">
+          <div class="tilt-card bg-[#223329]/50 backdrop-blur-sm rounded-xl p-2 md:p-4 border border-[#334b3a] w-full h-full flex flex-col items-center justify-center aspect-square max-w-[120px] md:max-w-[180px] lg:max-w-[250px] lg:w-[250px] lg:h-[250px]">
+            <img src="../assets/partners/UC.svg" alt="UC" class="partner-logo" loading="lazy" width="100" height="100" srcset="../assets/partners/UC.svg 100w, ../assets/partners/UC.svg 180w, ../assets/partners/UC.svg 250w" sizes="(max-width: 768px) 100px, (max-width: 1024px) 180px, 250px" fetchpriority="low" />
+          </div>
+        </div>
+        <div class="card-container h-full">
+          <div class="tilt-card bg-[#223329]/50 backdrop-blur-sm rounded-xl p-2 md:p-4 border border-[#334b3a] w-full h-full flex flex-col items-center justify-center aspect-square max-w-[120px] md:max-w-[180px] lg:max-w-[250px] lg:w-[250px] lg:h-[250px]">
+            <img src="../assets/partners/Revest360.svg" alt="Revest360" class="partner-logo" loading="lazy" width="100" height="100" srcset="../assets/partners/Revest360.svg 100w, ../assets/partners/Revest360.svg 180w, ../assets/partners/Revest360.svg 250w" sizes="(max-width: 768px) 100px, (max-width: 1024px) 180px, 250px" fetchpriority="low" />
+          </div>
         </div>
       </div>
-      <div class="card-container h-full">
-        <div class="tilt-card bg-[#223329]/50 backdrop-blur-sm rounded-xl p-2 md:p-4 border border-[#334b3a] w-full h-full flex flex-col items-center justify-center aspect-square max-w-[120px] md:max-w-[180px] lg:max-w-[250px] lg:w-[250px] lg:h-[250px]">
-          <img src="../assets/partners/UC.svg" alt="UC" class="partner-logo" loading="lazy" width="100" height="100" srcset="../assets/partners/UC.svg 100w, ../assets/partners/UC.svg 180w, ../assets/partners/UC.svg 250w" sizes="(max-width: 768px) 100px, (max-width: 1024px) 180px, 250px" fetchpriority="low" />
-        </div>
-      </div>
+    </div>
+    <!-- Partners Grid: Rest (7 columns) -->
+    <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-6 justify-items-center items-center w-full relative z-[1]">
       <div class="card-container h-full">
         <div class="tilt-card bg-[#223329]/50 backdrop-blur-sm rounded-xl p-2 md:p-4 border border-[#334b3a] w-full h-full flex flex-col items-center justify-center aspect-square max-w-[120px] md:max-w-[180px] lg:max-w-[250px] lg:w-[250px] lg:h-[250px]">
           <img src="../assets/partners/Booklyph.svg" alt="Booklyph" class="partner-logo" loading="lazy" width="100" height="100" srcset="../assets/partners/Booklyph.svg 100w, ../assets/partners/Booklyph.svg 180w, ../assets/partners/Booklyph.svg 250w" sizes="(max-width: 768px) 100px, (max-width: 1024px) 180px, 250px" fetchpriority="low" />
@@ -48,11 +57,6 @@
       </div>
       <div class="card-container h-full">
         <div class="tilt-card bg-[#223329]/50 backdrop-blur-sm rounded-xl p-2 md:p-4 border border-[#334b3a] w-full h-full flex flex-col items-center justify-center aspect-square max-w-[120px] md:max-w-[180px] lg:max-w-[250px] lg:w-[250px] lg:h-[250px]">
-          <img src="../assets/partners/Revest360.svg" alt="Revest360" class="partner-logo" loading="lazy" width="100" height="100" srcset="../assets/partners/Revest360.svg 100w, ../assets/partners/Revest360.svg 180w, ../assets/partners/Revest360.svg 250w" sizes="(max-width: 768px) 100px, (max-width: 1024px) 180px, 250px" fetchpriority="low" />
-        </div>
-      </div>
-      <div class="card-container h-full">
-        <div class="tilt-card bg-[#223329]/50 backdrop-blur-sm rounded-xl p-2 md:p-4 border border-[#334b3a] w-full h-full flex flex-col items-center justify-center aspect-square max-w-[120px] md:max-w-[180px] lg:max-w-[250px] lg:w-[250px] lg:h-[250px]">
           <img src="../assets/partners/Swift.svg" alt="Swift" class="partner-logo" loading="lazy" width="100" height="100" srcset="../assets/partners/Swift.svg 100w, ../assets/partners/Swift.svg 180w, ../assets/partners/Swift.svg 250w" sizes="(max-width: 768px) 100px, (max-width: 1024px) 180px, 250px" fetchpriority="low" />
         </div>
       </div>
@@ -61,7 +65,6 @@
           <img src="../assets/partners/Tiwalgo.svg" alt="Tiwalgo" class="partner-logo" loading="lazy" width="100" height="100" srcset="../assets/partners/Tiwalgo.svg 100w, ../assets/partners/Tiwalgo.svg 180w, ../assets/partners/Tiwalgo.svg 250w" sizes="(max-width: 768px) 100px, (max-width: 1024px) 180px, 250px" fetchpriority="low" />
         </div>
       </div>
-      <!-- Grayscaled Logos -->
       <div class="card-container h-full">
         <div class="tilt-card bg-[#223329]/50 backdrop-blur-sm rounded-xl p-2 md:p-4 border border-[#334b3a] w-full h-full flex flex-col items-center justify-center aspect-square max-w-[120px] md:max-w-[180px] lg:max-w-[250px] lg:w-[250px] lg:h-[250px]">
           <img src="../assets/partners/MST.svg" alt="MST" class="partner-logo grayscale" loading="lazy" width="100" height="100" srcset="../assets/partners/MST.svg 100w, ../assets/partners/MST.svg 180w, ../assets/partners/MST.svg 250w" sizes="(max-width: 768px) 100px, (max-width: 1024px) 180px, 250px" fetchpriority="low" />
@@ -113,7 +116,8 @@
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .tilt-card:hover {
-  transform: perspective(1000px) rotateX(0) rotateY(0) scale3d(1.02, 1.02, 1.02);
+  transform: perspective(1000px) rotateX(0) rotateY(0) scale3d(1.08, 1.08, 1.08) translateY(-8px);
+  box-shadow: 0 12px 32px 0 rgba(0, 255, 128, 0.25), 0 8px 24px 0 rgba(0,0,0,0.25), 0 1.5px 6px 0 rgba(0,255,128,0.15), 0 0.5px 2px 0 rgba(0,0,0,0.10);
 }
 .partner-logo {
   height: 7.5rem;
