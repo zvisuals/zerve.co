@@ -4,11 +4,11 @@
       <h1 class="text-[#FF6B00] text-3xl md:text-5xl mb-10 text-center" style="font-family: 'Sarpanch', sans-serif;">
         TECHSTACK
       </h1>
-      <div class="grid md:grid-cols-3 gap-4 md:gap-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
         <div class="card-container h-full" v-for="name in techNames" :key="name">
           <div class="tilt-card bg-[#223329]/50 backdrop-blur-sm rounded-xl p-4 border border-[#334b3a] h-full flex flex-col items-center justify-center">
             <div class="aspect-square mb-2 max-w-[100px] mx-auto flex items-center justify-center">
-              <!-- Image placeholder -->
+              <img v-if="techLogos[name]" :src="techLogos[name]" :alt="name + ' logo'" class="h-16 w-16 object-contain" />
             </div>
             <h3 class="text-[#FF6B00] text-lg mb-1 text-center" style="font-family: 'Sarpanch', sans-serif;">{{ name }}</h3>
           </div>
@@ -22,7 +22,6 @@
 const techNames = [
   'Tamagui',
   'Solito',
-  'Routing Video Tutorials',
   'Expo',
   'Next.js',
   'TanStack Query',
@@ -33,12 +32,30 @@ const techNames = [
   'React',
   'React Native',
   'Tailwind',
-  'Expo Go',
   'Vuetify',
   'Pinia',
   'Quill Editor',
   'Vite'
 ];
+
+const techLogos = {
+  'Tamagui': new URL('../assets/techstack/Tamagui.svg', import.meta.url).href,
+  'Solito': new URL('../assets/techstack/Solito.svg', import.meta.url).href,
+  'Expo': new URL('../assets/techstack/Expo.svg', import.meta.url).href,
+  'Next.js': new URL('../assets/techstack/Next.svg', import.meta.url).href,
+  'TanStack Query': new URL('../assets/techstack/Tanstack.svg', import.meta.url).href,
+  'Zustand': new URL('../assets/techstack/Zustand.svg', import.meta.url).href,
+  'Vue.js': new URL('../assets/techstack/Vue.svg', import.meta.url).href,
+  'Laravel': new URL('../assets/techstack/Laravel.svg', import.meta.url).href,
+  'MySQL': new URL('../assets/techstack/Mysql.svg', import.meta.url).href,
+  'React': new URL('../assets/techstack/React.svg', import.meta.url).href,
+  'React Native': new URL('../assets/techstack/ReactNative.svg', import.meta.url).href,
+  'Tailwind': new URL('../assets/techstack/Tailwind.svg', import.meta.url).href,
+  'Vuetify': new URL('../assets/techstack/Vuetify.svg', import.meta.url).href,
+  'Pinia': new URL('../assets/techstack/Pinia.svg', import.meta.url).href,
+  'Quill Editor': new URL('../assets/techstack/Quill.svg', import.meta.url).href,
+  'Vite': new URL('../assets/techstack/Vite.svg', import.meta.url).href
+};
 </script>
 
 <style scoped>

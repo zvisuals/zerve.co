@@ -1,5 +1,5 @@
 <template>
-  <div id="team" class="p-6 md:p-12 lg:px-[10%] lg:py-16 pt-24 bg-[#151e18]">
+  <div id="team" class="p-6 md:p-12 lg:px-[10%] lg:py-16 pt-24 team-bg">
     <!-- Header -->
     <h1 class="text-[#FF6B00] text-3xl md:text-5xl mb-10 text-center" data-aos="fade-down" data-aos-delay="150" style="font-family: 'Sarpanch', sans-serif;">
       MEET THE TEAM
@@ -185,5 +185,10 @@ img {
 
 .team-card-shadow {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.team-bg {
+  background: #091B19;
+background: linear-gradient(180deg, rgba(9, 27, 25, 1) 0%, rgba(38, 71, 64, 1) 50%, rgba(21, 31, 25, 1) 100%);
 }
 </style>
