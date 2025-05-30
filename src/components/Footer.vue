@@ -1,16 +1,16 @@
 <template>
-  <footer class="bg-[#1a2820] text-white py-16 px-6 md:px-12 lg:px-[10%]">
+  <footer class="bg-[#09141C] text-white py-16 px-6 md:px-12 lg:px-[10%]">
     <div class="max-w-7xl mx-auto">
       <!-- Main Footer Content -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
         <!-- Logo and Description -->
         <div class="space-y-6">
           <div class="flex items-center">
-            <img src="../assets/logo.svg" loading="lazy" alt="Money Trees Logo" class="h-10 w-10 mr-3" />
-            <span class="text-2xl font-bold" style="font-family: 'Sarpanch', sans-serif;">Money Trees</span>
+            <img src="../assets/logo.svg" loading="lazy" alt="Zerve.co Logo" class="h-10 w-10 mr-3" />
+            <span class="text-2xl font-bold" style="font-family: 'Sarpanch', sans-serif;">Zerve.co</span>
           </div>
           <p class="text-gray-400" style="font-family: 'Quicksand', sans-serif;">
-            Delivering high-quality digital solutions and online services across multiple industries in the Philippines and beyond.
+            Crafting high-quality digital experiences and creative solutions for brands across industries locally and globally.
           </p>
         </div>
 
@@ -41,11 +41,11 @@
             <li><a href="#contact" class="hover:text-[#FF6B00] transition-colors">Contact Us</a></li>
             <li class="flex items-center gap-2">
               <span class="material-symbols-outlined text-sm">mail</span>
-              <span>info@moneytrees.com</span>
+              <span>lauretazeusclyde@gmail.com</span>
             </li>
             <li class="flex items-center gap-2">
               <span class="material-symbols-outlined text-sm">call</span>
-              <span>+63 912 345 6789</span>
+              <span>+63 945 243 2824</span>
             </li>
           </ul>
         </div>
@@ -56,7 +56,7 @@
         <div class="flex flex-col md:flex-row justify-between items-center gap-4">
           <!-- Copyright -->
           <p class="text-gray-400 text-sm" style="font-family: 'Quicksand', sans-serif;">
-            © 2024 Money Trees Company. All rights reserved.
+            © 2024 Zerve.co Company. All rights reserved.
           </p>
           <!-- Social Links -->
           <div class="flex gap-6">

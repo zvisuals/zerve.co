@@ -1,46 +1,15 @@
 <template>
-  <nav ref="navbar" class="fixed top-0 w-screen max-w-full flex flex-row items-center justify-between px-2 md:px-[5%] py-2 pt-3 bg-[#151e18]/45 backdrop-blur-sm transition-transform duration-300 z-50" style="font-family: 'Sarpanch', sans-serif;">
-    <!-- Logo and Brand Name -->
-    <div class="flex items-center font-bold text-gray-100 cursor-pointer" @click="scrollToTop">
-      <img src="../assets/logo.svg" loading="lazy" alt="Logo" class="h-8 w-8 md:h-13 md:w-13 mr-2" />
-      <span class="hidden xl:inline text-2xl">Money Trees</span>
-    </div>
-    <!-- Navigation Links -->
-    <div class="flex-1 flex justify-center">
-      <ul class="flex flex-row space-x-2 md:space-x-10 items-center">
-        <li><a href="#products" @click.prevent="scrollToSection('products')" class="text-gray-100 text-xs md:text-base tracking-wider hover:text-orange-300">PRODUCTS</a></li>
-        <li><a href="#services" @click.prevent="scrollToSection('services')" class="text-gray-100 text-xs md:text-base tracking-wider hover:text-orange-300">SERVICES</a></li>
-        <li class="relative group">
-          <a href="#about" 
-             @click.prevent="toggleDropdown" 
-             class="text-gray-100 text-xs md:text-base tracking-wider hover:text-orange-300 flex items-center gap-1"
-             :class="{ 'text-orange-300': isDropdownOpen }">
-            ABOUT US
-            
-          </a>
-          <!-- Dropdown Menu -->
-          <div class="absolute left-0 mt-2 bg-[#223329]/95 backdrop-blur-sm py-2 min-w-[160px] rounded-lg shadow-lg z-50 border border-[#151e18]/30 transition-all duration-300"
-               :class="{ 'opacity-100 visible': isDropdownOpen, 'opacity-0 invisible pointer-events-none': !isDropdownOpen }">
-            <div class="absolute h-2 w-full -top-2"></div>
-            <a href="#about" 
-               @click.prevent="handleDropdownClick('about')" 
-               class="block px-4 py-2 text-gray-100 hover:text-orange-300 hover:bg-[#151e18]/30 text-sm transition-colors">
-              Who we are
-            </a>
-            <a href="#team" 
-               @click.prevent="handleDropdownClick('team')" 
-               class="block px-4 py-2 text-gray-100 hover:text-orange-300 hover:bg-[#151e18]/30 text-sm transition-colors">
-              Meet the team
-            </a>
-          </div>
-        </li>
-        <li><a href="#partners" @click.prevent="scrollToSection('partners')" class="text-gray-100 text-xs md:text-base tracking-wider hover:text-orange-300">PARTNERS</a></li>
-      </ul>
-    </div>
-    <!-- Work with Us -->
-    <div class="hidden xl:block text-gray-100 text-xl font-semibold cursor-pointer hover:text-orange-300" @click="scrollToSection('contact')">
-      Work with Us
-    </div>
+  <!-- Bottom Navigation Bar -->
+  <nav ref="navbar" class="navbar-container z-20 bg-[#0a232e]/60 rounded-full px-12 py-4 flex gap-12 text-white shadow-2xl backdrop-blur-xl border border-white/10">
+    <a href="#home" @click.prevent="scrollToSection('home')" class="nav-link active" style="font-family: 'Quicksand', sans-serif;">HOME</a>
+    <div class="nav-divider"></div>
+    <a href="#about" @click.prevent="scrollToSection('about')" class="nav-link" style="font-family: 'Quicksand', sans-serif;">ABOUT ME</a>
+    <div class="nav-divider"></div>
+    <a href="#work" @click.prevent="scrollToSection('work')" class="nav-link" style="font-family: 'Quicksand', sans-serif;">WORK</a>
+    <div class="nav-divider"></div>
+    <a href="#services" @click.prevent="scrollToSection('services')" class="nav-link" style="font-family: 'Quicksand', sans-serif;">SERVICES</a>
+    <div class="nav-divider"></div>
+    <a href="#webflow" @click.prevent="scrollToSection('webflow')" class="nav-link" style="font-family: 'Quicksand', sans-serif;">WEBFLOW EXPERT</a>
   </nav>
 </template>
 
@@ -48,122 +17,139 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 
 const navbar = ref(null);
-let lastScrollY = 0;
-const isDropdownOpen = ref(false);
-
-const toggleDropdown = (event) => {
-  event.stopPropagation();
-  isDropdownOpen.value = !isDropdownOpen.value;
-};
-
-const handleDropdownClick = (sectionId) => {
-  scrollToSection(sectionId);
-  isDropdownOpen.value = false;
-};
-
-const closeDropdown = () => {
-  isDropdownOpen.value = false;
-};
 
 const scrollToSection = (sectionId) => {
   const element = document.getElementById(sectionId);
   if (element) {
-    const navbarHeight = navbar.value?.offsetHeight || 0;
     const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
     window.scrollTo({
-      top: elementPosition - navbarHeight,
+      top: elementPosition - 80, // Account for navbar height
       behavior: 'smooth'
     });
   }
 };
 
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-};
-
 const handleScroll = () => {
   if (!navbar.value) return;
   
-  const currentScrollY = window.scrollY;
+  const homeSection = document.getElementById('home');
+  if (!homeSection) return;
   
-  // Show navbar when scrolling up or at top
-  if (currentScrollY < lastScrollY || currentScrollY < 50) {
-    navbar.value.style.transform = 'translateY(0)';
-  } 
-  // Hide navbar when scrolling down
-  else if (currentScrollY > lastScrollY && currentScrollY > 50) {
-    navbar.value.style.transform = 'translateY(-100%)';
-    isDropdownOpen.value = false;
-  }
+  const homeHeight = homeSection.offsetHeight;
+  const scrollY = window.scrollY;
   
-  lastScrollY = currentScrollY;
-};
-
-const handleClickOutside = (event) => {
-  if (!event.target.closest('.group')) {
-    isDropdownOpen.value = false;
+  // Position where navbar should be when static (near bottom of home section)
+  const navbarStaticPosition = homeHeight - 120; // 120px from bottom of home section
+  
+  // When navbar reaches top of viewport, make it sticky
+  const stickyPoint = navbarStaticPosition - scrollY;
+  
+  if (stickyPoint <= 16) { // 16px = 1rem from top
+    // Navbar has reached the top - make it sticky
+    navbar.value.style.position = 'fixed';
+    navbar.value.style.top = '1rem';
+    navbar.value.style.bottom = 'auto';
+    navbar.value.style.transform = 'translateX(-50%)';
+  } else {
+    // Navbar behaves like static content - moves with page scroll
+    navbar.value.style.position = 'absolute';
+    navbar.value.style.top = `${navbarStaticPosition}px`;
+    navbar.value.style.bottom = 'auto';
+    navbar.value.style.transform = 'translateX(-50%)';
   }
 };
 
 onMounted(() => {
   window.addEventListener('scroll', handleScroll);
-  document.addEventListener('click', handleClickOutside);
+  // Initial position
+  if (navbar.value) {
+    navbar.value.style.bottom = '1.5rem';
+    navbar.value.style.top = 'auto';
+  }
+  // Initial scroll check
+  handleScroll();
 });
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
-  document.removeEventListener('click', handleClickOutside);
 });
 </script>
 
-<style>
-.group:hover .group-hover\:block {
-  display: block;
+<style scoped>
+.navbar-container {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-/* Add this to create a hoverable gap between link and dropdown */
-.group:hover .absolute::before {
-  content: '';
-  position: absolute;
-  top: -8px;
-  left: 0;
-  right: 0;
-  height: 8px;
+.nav-link {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+  position: relative;
+  white-space: nowrap;
 }
 
-/* Custom breakpoint for xl at 985px */
-@media (min-width: 985px) {
-  .xl\:inline {
-    display: inline;
-  }
-  .xl\:block {
-    display: block;
-  }
+.nav-link:hover {
+  color: #1de9b6;
+  transform: translateY(-1px);
 }
 
-/* Hide at smaller screens */
-@media (max-width: 984px) {
-  .hidden {
-    display: none;
-  }
+.nav-link.active {
+  color: #1de9b6;
+  font-weight: 700;
 }
 
-/* Improve mobile responsiveness */
+.nav-divider {
+  width: 1px;
+  height: 20px;
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.2), transparent);
+  align-self: center;
+}
+
+/* Enhanced glass effect */
+nav {
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  background: rgba(10, 35, 46, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   nav {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    gap: 2rem;
+    padding: 0.75rem 2rem;
   }
   
-  ul {
-    gap: 0.25rem;
+  .nav-link {
+    font-size: 0.85rem;
   }
   
-  li {
-    white-space: nowrap;
+  .nav-divider {
+    height: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  nav {
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-link {
+    font-size: 0.75rem;
+  }
+  
+  .nav-divider {
+    height: 14px;
   }
 }
 </style>

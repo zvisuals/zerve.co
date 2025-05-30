@@ -1,5 +1,5 @@
 <template>
-  <div id="services" class="min-h-screen p-6 md:p-12 lg:px-[10%] lg:py-16 pt-24 relative">
+  <div id="services" class="min-h-screen p-6 md:p-12 lg:px-[10%] lg:py-16 pt-24 relative services-bg">
     <!-- Background Image -->
     <div class="absolute inset-0 z-0">
       <img src="../assets/Servicesbg.svg" alt="Services Background" class="w-full h-full object-cover" />
@@ -281,6 +281,11 @@ onMounted(() => {
 </script>
 
 <style scoped>
+.services-bg {
+  background: #0A1924;
+  background: linear-gradient(0deg, rgba(10, 25, 36, 1) 0%, rgba(22, 46, 51, 1) 50%, rgba(10, 25, 36, 1) 100%);
+}
+
 .backdrop-blur-sm {
   backdrop-filter: blur(4px);
 }
@@ -294,5 +299,9 @@ onMounted(() => {
   transition: transform 0.1s ease-out;
   transform-style: preserve-3d;
   will-change: transform;
+}
+
+.tilt-card:hover {
+  box-shadow: 0 12px 32px 0 #427CA6, 0 8px 24px 0 rgba(0,0,0,0.25), 0 1.5px 6px 0 #427CA6, 0 0.5px 2px 0 rgba(0,0,0,0.10);
 }
 </style>

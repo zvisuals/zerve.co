@@ -8,7 +8,7 @@
     <!-- Products Grid -->
     <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
       <div v-for="(product, i) in products" :key="i" class="card-container cursor-pointer h-full" data-aos="fade-up" :data-aos-delay="i * 100" @click="openModal(i)">
-        <div ref="productCards" class="product-card group relative bg-[#223329]/50 rounded-lg md:rounded-xl backdrop-blur-sm border border-[#151e18]/30 md:border-2 shadow-[0_4px_8px_rgba(0,20,0,0.5)] flex flex-col h-full min-h-[220px]">
+        <div ref="productCards" class="product-card group relative bg-[#182B33]/50 rounded-lg md:rounded-xl backdrop-blur-sm border border-[#151e18]/30 md:border-2 shadow-[0_4px_8px_rgba(0,20,0,0.5)] flex flex-col h-full min-h-[220px]">
           <div class="flex items-center justify-center product-image-container">
             <img
               :src="productImages[i]"
@@ -33,7 +33,7 @@
     <div v-if="selectedProduct !== null" 
          class="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-[9999] p-4"
          @click="closeModal">
-      <div class="relative bg-[#223329] rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+      <div class="relative bg-[#182B33] rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
            @click.stop>
         <button @click="closeModal" 
                 class="absolute top-4 right-4 text-white hover:text-[#FF6B00] text-2xl cursor-pointer hover:shadow-[0_0_10px_rgba(255,107,0,0.5)] active:scale-95 transition-all duration-300 z-[10000]"
@@ -146,8 +146,8 @@ onMounted(() => {
 }
 
 .products-bg {
-  background: #011018;
-  background: linear-gradient(170deg, rgba(1, 16, 24, 1) 0%, rgba(22, 36, 28, 1) 50%, rgba(5, 27, 27, 1) 100%);
+  background: #0A1924;
+  background: linear-gradient(0deg, rgba(10, 25, 36, 1) 0%, rgba(22, 46, 51, 1) 50%, rgba(10, 25, 36, 1) 100%);
 }
 
 .card-container {
@@ -163,6 +163,7 @@ onMounted(() => {
 
 .product-card:hover {
   transform: perspective(1000px) rotateX(0) rotateY(0) scale3d(1.02, 1.02, 1.02);
+  box-shadow: 0 12px 32px 0 #427CA6, 0 8px 24px 0 rgba(0,0,0,0.25), 0 1.5px 6px 0 #427CA6, 0 0.5px 2px 0 rgba(0,0,0,0.10);
 }
 
 .product-image-container {

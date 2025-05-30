@@ -188,7 +188,7 @@ img {
 }
 
 .team-bg {
-  background: #091B19;
-background: linear-gradient(180deg, rgba(9, 27, 25, 1) 0%, rgba(38, 71, 64, 1) 50%, rgba(21, 31, 25, 1) 100%);
+  background: #0A1924;
+background: linear-gradient(0deg, rgba(10, 25, 36, 1) 0%, rgba(22, 46, 51, 1) 50%, rgba(10, 25, 36, 1) 100%);
 }
 </style>

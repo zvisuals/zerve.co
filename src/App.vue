@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 import Home from './components/Home.vue';
+import Projects from './components/Projects.vue';
 import Navbar from './components/Navbar.vue';
 import About from './components/About.vue';
 import Products from './components/Products.vue';
@@ -64,12 +65,9 @@ onUnmounted(() => {
 
       <Navbar />
       <Home />
-      <Products />
-      <Services />
+      <Projects />
       <TechStack />
       <About />
-      <Partners />
-      <Team />
       <ContactUs />
       <Footer />
     </div>

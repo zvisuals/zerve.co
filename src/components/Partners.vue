@@ -5,7 +5,7 @@
       <img src="../assets/Servicesbg.svg" alt="Partners Background" class="w-full h-full object-cover" />
     </div>
     <!-- Header -->
-    <h1 class="text-[#FF6B00] text-3xl md:text-5xl mb-10 text-center relative z-[1]" data-aos="fade-down" data-aos-delay="100" style="font-family: 'Sarpanch', sans-serif;">
+    <h1 class="text-[#01aeb7] text-3xl md:text-5xl mb-10 text-center relative z-[1]" data-aos="fade-down" data-aos-delay="100" style="font-family: 'Sarpanch', sans-serif;">
       PARTNERS
     </h1>
     <!-- Partners Grid: First Row (3 columns) -->
